@@ -1,4 +1,4 @@
-import itertools
+import itertools -> from itertools import product
 
 def nextClosestTime(time: str) -> str:
   elapse = 24 * 60
