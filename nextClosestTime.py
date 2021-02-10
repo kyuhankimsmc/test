@@ -21,6 +21,7 @@ def nextClosestTime(time: str) -> str:
 def nextClosestTime2(time: str) -> str:
   time = time[:2] + time[3:]
   
+  # return larger number else return '99'
   def find_larger(temp, comp):
     
     for i in sorted(time):
@@ -28,6 +29,8 @@ def nextClosestTime2(time: str) -> str:
       for j in sorted(time):
         if i + j > temp and i + j < comp:
           return i + j
+        
+    # '99' means that no larger number exists
     return '99'
   
   new_min = find_larger(time[2:], '60')
