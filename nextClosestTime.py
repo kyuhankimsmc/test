@@ -1,3 +1,5 @@
+import itertools
+
 def nextClosestTime(time: str) -> str:
   elapse = 24 * 60
   ans = start = int(time[:2]) * 60 + int(time[3:])
